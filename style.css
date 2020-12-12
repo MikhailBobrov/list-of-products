@@ -1,0 +1,228 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html,
+body {
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.7em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Utility Classes */
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+  /* всегда будет показывать background */
+  overflow: auto;
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
+.text-primary {
+  color: #0e6655;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #0e6655;
+  padding: 6px 21px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #8c4a67;
+  color: #fff;
+}
+
+.btn-dark {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  padding: 6px 21px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-dark:hover {
+  opacity: 0.9;
+}
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary {
+  background: #f7c08a;
+  color: #333;
+}
+
+/* Padding */
+
+.py-1 {
+  padding: 10px 0;
+}
+
+.py-2 {
+  padding: 20px 0;
+}
+
+.py-3 {
+  padding: 30px 0;
+}
+
+#basic .form-group {
+  padding: 15px 0;
+}
+
+#basic .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+#basic .form-group input {
+  width: 100%;
+  padding: 10px;
+  padding-left: 0;
+  border: none;
+  border-bottom: 1px #333 solid;
+}
+
+#basic .form-group input:focus {
+  outline: none;
+  border-color: #0e6655;
+}
+
+#basic form {
+  margin-bottom: 30px;
+}
+
+.card-action h5 {
+  font-size: 20px;
+  color: #0e6655;
+}
+
+.input-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 10px;
+  padding-left: 0;
+  letter-spacing: 0.3em;
+  border: none;
+  border-bottom: 1px #333 solid;
+}
+
+.input-field input:focus {
+  outline: none;
+  border-bottom-color: #0e6655;
+}
+
+.collection-list {
+  display: flex;
+}
+
+.collection {
+  background: #f4f4f4;
+  list-style: none;
+  min-height: 300px;
+  width: 33.3%;
+  margin-bottom: 20px;
+  text-align: center;
+  border-right: 1px solid #333;
+  cursor: pointer;
+}
+
+.collection:last-child {
+  border: none;
+}
+
+.collection p {
+  background: #cfdcc8;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.fa-remove {
+  padding-left: 10px;
+  color: coral;
+}
+
+@media only screen and (max-width: 500px) {
+  .collection-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .collection {
+    width: 100%;
+    border: none;
+  }
+
+  .card-action {
+    max-width: 400px;
+  }
+
+  .clear-tasks {
+    width: 100%;
+    text-align: center;
+  }
+}
